@@ -10,6 +10,7 @@
     color: white;
     z-index: 1; 
     top: 120px;
+    /* bottom:0px; */
     left: 0;
     background-color: #111;
     overflow-x: hidden; 
