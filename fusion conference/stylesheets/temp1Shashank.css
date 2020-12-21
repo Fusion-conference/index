@@ -1,7 +1,12 @@
+.topNav{
+    position: sticky;
+    top:0px;
+}
+
 .sideNavbar{
     height: 100vh; 
     width: 300px; 
-    position: fixed; 
+    position: sticky; 
     color: white;
     z-index: 1; 
     top: 120px;
@@ -9,6 +14,7 @@
     background-color: #111;
     overflow-x: hidden; 
     padding-top: 30px; 
+    float: left;
 }
 
 .news{
@@ -43,6 +49,4 @@
 
 .contentPage{
     margin-left: 300px;
-    padding-top: 120px;
-    /* max-width: 700px; */
 }
