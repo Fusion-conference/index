@@ -1,0 +1,46 @@
+.sideNavbar{
+    height: 100vh; 
+    width: 300px; 
+    position: fixed; 
+    color: white;
+    z-index: 1; 
+    top: 120px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden; 
+    padding-top: 30px; 
+}
+
+.news{
+    width: 250px;
+    height: 150px;
+    margin-left: 25px;
+    background-color: orangered;
+    margin-bottom: 60px;
+}
+
+.impDates{
+    width: 250px;
+    height: 200px;
+    margin-left: 25px;
+    background-color: orangered;
+    margin-bottom: 60px;
+
+}
+
+.smallHeading{
+    background-color: grey;
+    width: 250px;
+    height:30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.content{
+    font-size: 12px;
+    margin:15px;
+}
+
+.contentPage{
+    margin-left: 300px;
+}

@@ -5,11 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width , initial-scale=1.0">
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-   <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+  <link rel="stylesheet" type="text/css" href="stylesheets/temp1Shashank.css">
 </head>
 <body>
+
+
   <!--Header-->
-  <header class="text-gray-700 body-font" style="background-image: linear-gradient(to bottom right, #FF1D1D, #FFE53F);">
+  <header class="text-gray-700 body-font" style="background-image: linear-gradient(to bottom right, #FF1D1D, #FFE53F);position: fixed;width: 100%;">
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
     <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
       <img src="Fusion.png" fill="none" stroke="currentColor" class="w-20 h-20 text-white p-0" viewBox="0 0 24 24">
@@ -17,7 +20,7 @@
       </img>
       <span class="ml-3 text-xl">Conference Name</span>
     </a>
-    <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+    <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center" >
       <a href="main.html" style="color:white" class="mr-5 hover:text-white">Home</a>
       <a href="" style="color:white" class="mr-5 hover:text-blue">Paper Submission</a>
       <a href="" style="color:white" class="mr-5 hover:text-white">Special Session</a>
@@ -33,7 +36,36 @@
     </button>
   </div>
 </header>
+
+
+  <!-- Side Navbar -->
+  <div class="sideNavbar">
+    <div class="news">
+      <div class="smallHeading">
+        <h3><b>News & Announcements</b></h3>
+      </div>
+      <div class="content">
+        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span>
+      </div>
+    </div>
+    <div class="impDates">
+      <div class="smallHeading">
+        <h3><b>Important Dates</b></h3>
+      </div>
+      <div class="content">
+        <ul style="list-style: unset;">
+          <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </li>
+          <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </li>
+          <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
 <!--Main description Section-->
+<div class="contentPage" style="padding-top: 50px;">
 <section class="text-gray-700 body-font">
   <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
@@ -51,6 +83,9 @@
     </div>
   </div>
 </section>
+
+
+
 <!--Speaker section-->
 <h2 id="speakers" class="text-4xl text-red-500 tracking-widest font-medium title-font mb-1" style="text-align: center;">SPEAKERS</h2><br>
 <a href=""><div class="flex -space-x-2 overflow-hidden" style="display:inline-block;text-align: center;margin-left:12%;">
@@ -65,5 +100,7 @@
    <img class="inline-block h-40 w-40 rounded-full ring-2 ring-white" 
   src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
 </div></a>
+
+</div>
 </body>
 </html>
