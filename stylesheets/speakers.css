@@ -1,13 +1,31 @@
 .a
 {
+   border-radius: 50%;
+   
+   
+}
+.polaroid{
+	position: relative;
+  width: 50%;
+}
 
+div.polaroid {
+  width: 220px;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+
+div.container {
+  text-align: center;
   
 }
+
 .b
 {
-	font-size: 40px;
+	font-size: 30px;
 	color: #222629 ;
 	font-weight: bold;
 	margin-bottom: 0px;
@@ -16,7 +34,7 @@
 
 .c
 {
-	font-size: 25px;
+	font-size: 20px;
 	color: #61892F;
 	margin-top: 0px;
 	font-weight:bolder;
@@ -27,24 +45,27 @@
 {   
 	margin-top: 0px;
 	margin-bottom: 0px;
-    font-size: 20px;
+    font-size: 15px;
 	font-weight:bolder;
 	color: #86C232;
 }
 
-.e
-{
-	font-size: 13px;
-    background-color: #59253A; 
-    color: white;
-    text-align: center;
-    display: inline-block;
-    transition-duration: 0.4s;
-    cursor: pointer;
 
+
+.flex-container
+{
+  display: flex;
+  flex-direction: row;
+
+
+  
+}
+
+.flex-container > div {
  
-}
-.e:hover {
-  background-color: #895061;
-  color: white;
-}
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+
+ }
