@@ -218,6 +218,7 @@ body {
   margin-right: auto;
   margin-top: 40%;
   height: 70vh;
+  vertical-align:middle;
 }
 
 .carousel {
