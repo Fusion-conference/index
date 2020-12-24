@@ -223,6 +223,7 @@ body {
 .carousel {
   transition: 0.4s ease-in-out;
   display: flex;
+  margin-top:30%;
   height: 50vh;
 }
 
