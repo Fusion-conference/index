@@ -30,7 +30,7 @@ body {
 .card {
   position: relative;
   width: 92vw;
-  max-width: 450px;
+  max-width: 360px;
   margin: 32px auto;
   display: flex;
   flex-direction: column;
