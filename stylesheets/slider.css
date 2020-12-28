@@ -38,15 +38,15 @@
     width:100%;
     height:400px;
     filter: brightness(70%);    
-    background-image: url("index/images/gcet.jpg");
+    background-image: url("https://github.com/Fusion-conference/index/blob/main/images/gcet.jpg");
     background-size:100% 400px;
 }
 #slides3{
     width:100%;
     height:400px;
     filter: brightness(70%);
-    background-image: url("images/header.png ");
-    background-size:100% 400px;
+    background-image: url("https://s7.gifyu.com/images/15914131428740b3f9e70c39d4590.jpg ");
+    background-size: 115% 400px;
 }
 #slides4{
     width:100%;
