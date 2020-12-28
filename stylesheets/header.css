@@ -1,74 +1,75 @@
-
-
-/* {box-sizing: border-box;}*/
-
-
-.mySlides {display: none;}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-  
+#maincontainer{
+    width:100%;
+    height:400px;
+    background-color:white;
+    overflow:hidden ;
 }
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+#slidescontainer{
+    width:400%;
+    height:400px;
+    position:relative ;
+    display:flex;
+    animation: ani 12s infinite  linear;
 }
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+@keyframes ani{
+    0%{left:0%;}
+    12.6%{left:0%;}
+    16.6%{left:-100%;}
+    30.2%{left:-100%;}
+    33.2%{left:-200%;}
+    47%{left:-200%;}
+    50%{left:-300%;}
+    62.6%{left:-300%;}
+    66.6%{left:-200%;}
+    80.2%{left:-200%;}
+    83.2%{left:-100%;}
+    97.8%{left:-100%;}
+    100%{left:0%;}
+    0%{left:0%;}
+        }
+#slides1{
+    width:100%;
+    height:400px;
+    filter: brightness(70%);
+    background-image: url("images/header.png ");
+    background-size: 115% 400px;
 }
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+#slides2{
+    width:100%;
+    height:400px;
+    filter: brightness(70%);    background:url("images/gcet.jpg  ");
+    background-size:100% 400px;
 }
-
-.active {
-  background-color: #717171;
+#slides3{
+    width:100%;
+    height:400px;
+    filter: brightness(70%);
+    background: url("images/header.png  ");
+    background-size:100% 400px;
 }
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
- /* animation-name: fade;
-  animation-duration: 1.5s; */
-  animation: fade 10s infinite linear;
+#slides4{
+    width:100%;
+    height:400px;
+    filter: brightness(70%);
+    background:url("images/gcet.jpg ");
+    background-size: 100% 400px;
 }
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+#maincontainer h1{
+    color:white;
+    position: fixed ;
+    width:auto ;
+    font-size:20px;
+    left: 20px;
+    text-transform: capitalize ;
+    justify-content:center ;
+    display: inline-block ;
+    z-index:99;
+    top:20%;
 }
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+#teamsection{
+    color: black;
+    text-align:center ;
+    text-transform:capitalize ;
+    padding-top:20px;
+    font-family:consolas;
 }
