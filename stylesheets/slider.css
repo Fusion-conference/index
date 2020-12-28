@@ -37,21 +37,21 @@
 #slides2{
     width:100%;
     height:400px;
-    filter: brightness(70%);    background:url("gcet.jpg");
+    filter: brightness(70%);    background:url("images/gcet.jpg");
     background-size:100% 400px;
 }
 #slides3{
     width:100%;
     height:400px;
     filter: brightness(70%);
-    background: url("header.png ");
+    background: url("images/header.png ");
     background-size:100% 400px;
 }
 #slides4{
     width:100%;
     height:400px;
     filter: brightness(70%);
-    background:url("images/gcet.jpg ");
+    background:url("images/gcet.jpg");
     background-size: 100% 400px;
 }
 #maincontainer h1{
