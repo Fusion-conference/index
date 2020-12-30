@@ -68,6 +68,10 @@ body{
 }
 
 .contentPage{
-    margin-left: 300px;
+    /* margin-left: 300px; */
     z-index: -100;
+}
+
+.callForPapers{
+    height:100%;
 }
