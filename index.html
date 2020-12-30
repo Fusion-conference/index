@@ -21,18 +21,74 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/sp_akshita.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/footer.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/slider.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/about.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/navstyle.css"> 
-  <link rel="stylesheet" type="text/css" href="stylesheets/about.css"> 
+  <link rel="stylesheet" type="text/css" href="stylesheets/committees.css"> 
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="query.js"></script>
 
 </head>
 <body>
+	<!--Top Nav Bar According to ICACDS21-->
+<!-- <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-header1">
+          <button type="button" class="navbar-toggle1 collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">ICRAAE 2020-21</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+               <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+               <li><a href="#">Preceedings</a></li>
+                  <li><a href="#">Call for Papers</a></li>
+                     <li><a href="#">Speakers</a></li>
+                        <li><a href="#">Committees</a></li>
+                           <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>/.nav-collapse
+    </nav> -->
+	
+	
+  <!--Header-->
+  
+  <!-- <header class="text-gray-700 body-font topNav" style="background-image: linear-gradient(to bottom right, green, lightgreen);width: 100%;z-index: 100;">
+    <div class="container-nav mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </img>
+      <span class="ml-3 text-xl">ICRAEE</span>
+    </a>
+    <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center" >
+      <a href="main.html" style="color:white" class="mr-5 hover:text-white">ICRAEE</a>
+      <a href="" style="color:white" class="mr-5 hover:text-blue">FOR AUTHORS</a>
+      <div class="dropdown-content">
+        <a href="#">CALL FOR PAPERS</a>
+        <a href="#">REGISTRATION DETAILS</a>
+      </div>
+      <a href="" style="color:white" class="mr-5 hover:text-white dropdown">COMMITTEE</a>
+      <div class="dropdown-content">
+        <a href="#">ADVISORY BOARD</a>
+        <a href="#">ORGANISING COMMITTEE</a>
+        <a href="#">TECHNICAL PROGRAM COMMITTEE</a>
+      </div>
+      <a href="#" style="color:white" class="mr-5 hover:text-white">IMPORTANT DATES</a>
+      <a href="" style="color:white" class="mr-5 hover:text-white">SUBMISSION</a>
+      <a href="" style="color:white" class="mr-5 hover:text-white">SPEAKERS</a>
+      <a href="" style="color:white" class="mr-5 hover:text-white">CONTACT US</a>
+    </nav>
+    </div>
+</header> -->
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light topNav" style="background-image: linear-gradient(to bottom right, green, lightgreen);width: 100%;z-index: 100;">
+  
+
+<!--nav class="navbar navbar-expand-lg navbar-light bg-light topNav" style="background-image: linear-gradient(to bottom right, green, lightgreen);width: 100%;z-index: 100;">
   <a class="navbar-brand" href="#">ICCRAEE</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -69,7 +125,7 @@
       </li>
     </ul>
   </div>
-</nav>
+</nav-->
   
 <!-- sliding -->
 <div id="maincontainer">
@@ -449,6 +505,251 @@
               </div>
             </div>
           </section>
+		
+		<!-- committee begins -->
+		
+		
+		<section class="committees">
+<h3>Committees</h3>
+<div class="outer-tab">
+  
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'oc')" id="defaultOpen">ORGANIZING COMMITTEE</button>
+  <button class="tablinks" onclick="openCity(event, 'tpc')">TECHNICAL PROGRAM COMMITTEE</button>
+  <button class="tablinks" onclick="openCity(event, 'ab')">ADVISORY BOARD</button>
+</div>
+
+<div id="oc" class="tabcontent">
+  
+  <br>
+  <div class="comm-card">
+    <h2 style="color: rgb(225, 11, 62);"> &nbsp; &nbsp; &nbsp;ORGANIZING COMMITTEE</h2>
+      <ul style="list-style-type: none";>
+        <li><b>Chief Patron</b></li>
+        <li>Shri Suneel Galgotia, Chairman</li>
+        <br>
+        <li><b>Patron</b></li>
+          <li>Shri Dhruv Galgotia, CEO</li>
+          <li>Prof. (Dr.) Vinay Kumar Pathak, VC, AKTU</li>
+          <br>
+          <li><b>Honorary General Chair</b></li>
+          <li>Prof. (Dr.) Brijesh Singh, Director, GCET</li>
+          <br>
+          <li><b>Convener and Conference Organizing Chair </b></li>
+          <li>Prof. (Dr.) Sanjeev Kumar Singh, HOD (IT), GCET </li>
+          <br>
+          <li><b>Conference General Chair</b></li>
+          <li>Dr. Sandeep Saxena, IT, GCET</li>
+          <br>
+          <li><b>Conference Co-Organizing Chair’s </b></li>
+          <li>Dr. Sandhya Katiyar, IT, GCET </li>
+          <li>Dr. Sunil Kumar Bharti, IT, GCET </li>
+      </ul>
+      </div>
+      <br>
+      <div class="comm-card">
+        <h2 style="color: rgb(225, 11, 62);"> &nbsp; &nbsp; &nbsp; Technical Program Chairs </h2>
+        <ul style="list-style-type: none";>
+        <li>Prof. (Dr) Vishnu Sharma, HOD (CSE), GCET</li>
+        <li>Dr. Gagan Tiwari, HOD (MCA), GCET </li>
+        <li>Dr. Deepak Ghambhir, IT, GCET </li>
+        <li>Dr. Veena Mittal, IT, GCET </li>
+        </ul>
+      </div>
+      <br>
+      
+      <div class="comm-card">
+        <h2 style="color: rgb(225, 11, 62);"> &nbsp; &nbsp; &nbsp; Organizing Committee </h2>
+        <ul style="list-style-type: none";>
+        <li>Prof. Rekha Baghel, IT, GCET</li>
+          <li>Dr. Inderpreet Kaur, CSE, GCET </li>
+          <li>Prof. Swasti Singhal, IT, GCET </li>
+          <li>Dr. Vineet Kumar, CSE, GCET</li>
+        </ul>
+      </div>
+      <br>
+      <div class="comm-card">
+        <h2 style="color: rgb(225, 11, 62);"> &nbsp; &nbsp; &nbsp; Publication Committee </h2>
+        <ul style="list-style-type: none";>
+        <li>Dr. Sunil Kumar Bharti, IT, GCET </li>
+          <li>Prof. U. Hariharan, IT, GCET </li>
+          <li>Prof. K. Rajkumar, IT, GCET </li>
+        </ul>
+      </div>
+      <br>
+      <div class="comm-card">
+        <h2 style="color: rgb(225, 11, 62);"> &nbsp; &nbsp; &nbsp; Publicity Committee </h2>
+        <ul style="list-style-type: none";>
+        <li>Dr. Veena Mittal, IT, GCET </li>
+          <li>Prof. Bhawna Singh, IT, GCET </li>
+        </ul>
+      </div>
+      <br>
+      <div class="comm-card">
+        <h2 style="color: rgb(225, 11, 62);"> &nbsp; &nbsp; &nbsp; Finance Committee </h2>
+        <ul style="list-style-type: none";>
+        <li>Prof. Ranjit Kumar, IT, GCET</li>
+          <li>Prof. Gagan Gupta, IT, GCET</li>
+        </ul>
+      </div>
+      <br>
+      <div class="comm-card">
+        <h2 style="color: rgb(225, 11, 62);"> &nbsp; &nbsp; &nbsp; Hospitality Committee </h2>
+        <ul style="list-style-type: none";>
+        <li>Prof. Kanika Singhal, IT, GCET</li>
+          <li>Prof. Rekha Bhagel, IT, GCET</li>
+          <li>Prof. Sanjay Kumar, IT, GCET</li>
+          <li>Prof. Rahul Singh, IT, GCET </li>
+        </ul>
+      </div>
+      <br>
+      <div class="comm-card">
+        <h2 style="color: rgb(225, 11, 62);"> &nbsp; &nbsp; &nbsp; Transport and Accommodation Committee </h2>
+        <ul style="list-style-type: none";>
+        <li>Prof. Vivek  Kesari, IT, GCET</li>
+          <li>Prof. Javed Miya, IT, GCET</li>
+        </ul>
+      </div>
+      <br>
+      <div class="comm-card">
+        <h2 style="color: rgb(225, 11, 62);"> &nbsp; &nbsp; &nbsp; Website Committee </h2>
+        <ul style="list-style-type: none";>
+        <li>Prof. Nilotpal Pathak, IT, GCET</li>
+          <li>Prof. U. Hariharan, IT, GCET</li>
+        </ul>
+      </div>
+      <br>
+      <div class="comm-card">
+        <h2 style="color: rgb(225, 11, 62);"> &nbsp; &nbsp; &nbsp; Sponsorship/Media Committee </h2>
+        <ul style="list-style-type: none";>
+        <li>Prof. Ravi Sankar Pathak, IT, GCET</li>
+          <li>Prof. Vivek Agrawal,  IT, GCET
+          <li>Prof. Suresh Kumar, IT, GCET</li>
+        </ul>
+      </div>
+      <br>
+      <div class="comm-card">
+        <h2 style="color: rgb(225, 11, 62);"> &nbsp; &nbsp; &nbsp; Student Organizing Committee </h2>
+        <ul style="list-style-type: none";>
+        <li>Shashank Agarwal,IT, GCET</li>
+        <li>Ayesha Falak,IT, GCET</li>
+        <li>Raghav Garg,IT, GCET</li>
+        <li>Shivankar Vaish,IT, GCET</li>
+        <li>Pundreek Saurabh Srivastava,IT, GCET</li>
+        <li>Rohit Rao,IT, GCET</li>
+        <li>Sneh Agrawal,IT, GCET</li>
+        <li>Shayan Alam,IT, GCET </li>
+        <li>Anshika,IT, GCET</li>
+        <li>Rochan Tripathi,IT, GCET</li>
+        <li>Rohan Singh,IT, GCET</li>
+        <li>Akshita Awasthi,IT, GCET</li>
+        <li>Radhika Bhanot,IT, GCET</li>
+        <li>Surbhi Sonkar,IT, GCET</li>
+        </ul>
+      </div>
+
+  </div>
+
+
+<div id="tpc" class="tabcontent">
+  <br>
+  <div class="comm-card">
+    <h2 style="color: rgb(225, 11, 62);"> &nbsp; &nbsp; &nbsp; TECHNICAL PROGRAM COMMITTEE</h2>
+      <ul style="list-style-type: none";>
+        <li>Dr. Rajeev Srivastava, IIT BHU, Varanasi</li>
+          <li>Dr. D. P. Vidyarthi, JNU, New Delhi</li>
+          <li>Dr. Sunil Kumar Bharti, GCET, Gr. Noida</li>
+          <li>Dr. P. K Singh, MMMUT Gorakhpur</li>
+          <li>Dr. V. B. Singh, DU, New Delhi</li>
+          <li>Dr. Girish Sharma, BPIBS, NCT Delhi</li>
+          <li>Dr. Sandhya Katiyar, IT, GCET </li>
+          <li>Dr. Neelendra Badal, KNIT Sultanpur</li>
+          <li>Dr. Shailesh Tiwari, ABESEC Ghaziabad</li>
+          <li>Dr. Aruni Singh, KNIT Sultanpur</li>
+          <li>Dr. Parmanand, SU, Gr.Noida</li>
+          <li>Dr. Shashank Srivastava, MNNIT, Allahabad</li>
+          <li>Dr. Mayank Singh, CISR Foundation</li>
+          <li>Dr. Bharat Bhusan, Sharda University</li>
+          <li>Dr. Deepak Ghambhir, GCET, Gr. Noida</li>
+          <li>Dr. Manoj Kumar, UPES, Dehradun, India</li>
+          <li>Dr. Ashok Kumar Pradhan, SRM University, AP </li>
+          <li>Dr. Anuj Bhardwaj, JPIIT, Noida</li>
+          <li>Dr. Ashish Negi, GBPEC, PauriGarhwal</li>
+          <li>Dr. Vishnu Sharma, GCET, Gr. Noida</li>
+          <li>Dr. Udai Shanker, MMMUT Gorakhpur</li>
+          <li>Dr. Ankur Saxena, S P University, Gujrat</li>
+          <li>Dr. Veena Mittal,GCET, Gr. Noida</li>
+          <li>Dr. R. K. Yadav, DTU, Delhi</li>
+          <li>Dr. Abhishek Singhal, Amity University, Noida</li>
+          <li>Dr. Ved Prakash Mishra, Amity University, Dubai</li>
+          <li>Dr. Nanhey Singh, AIACTR, New Delhi</li>
+          <li>Dr. K. N. Mishra, BITS. Mesra </li>
+          <li>Dr. Anil Kumar, KIET, Ghaziabad</li>
+          <li>Dr. Sanjay Jain, NIT Kurukshetra</li>
+          <li>Dr. Jai Prakash, MMMUT Gorakhpur</li>
+          <li>Dr. Adesh Pandey, KIET, Ghaziabad</li>
+          <li>Dr. J. N. Singh, GU, Greater Noida</li>
+          <li>Prof Rani Astya, SU, Greater Noida</li>
+          <li>Dr. Sanjeev Pippal, GL Bajaj, Greater Noida</li>
+          <li>Dr. Dileep Kumar Yadav, GU, Greater Noida</li>
+          <li>Dr. Karan Singh, JNU, New Delhi</li>
+          </ul>
+      </div>
+      </div>
+</div>
+
+<div id="ab" class="tabcontent">
+  <br>
+  <div class="comm-card">
+    <h2 style="color: rgb(225, 11, 62);"> &nbsp; &nbsp; &nbsp;ADVISORY BOARD</h2>
+      <ul style="list-style-type: none";>
+        <li>Prof. Brijesh Singh, GCET, Greater Noida</li>
+        <li> Prof. Praveen Maduri, GCET Greater Noida</li>
+        <li> Prof. Lakshmanan M, GCET Greater Noida</li>
+        <li> Prof. Mohd Asim Qadri, GCET Greater Noida</li>
+        <li> Prof. Md. Danish Equbal, GCET Greater Noida</li>
+        <li> Prof. Rishav Garg, GCET Greater Noida</li>
+        <li> Prof. A. Ambikapathy, GCET Greater Noida</li>
+        <li> Prof Sansar Singh Chauhan, GU, Greater Noida</li>
+        <li> Prof Sanjay Chauhan, GU, Greater Noida</li>
+        <li> Prof Usha Chauhan, GU, Greater Noida</li>
+        <li> Prof Sanjeev Pippal, GL Bajaj, Greater Noida</li>
+        <li> Prof Sanjeev Pippal, GL Bajaj, Greater Noida</li>
+        <li> Prof Ajay Shankar Singh GU, Greater Noida</li>
+        <li> Prof Prashant Jhori GU, Greater Noida</li>
+        <li> Prof Thirunavukkarasu K , GU, Greater Noida</li>
+        <li> Prof J N Singh, GU, Greater Noida</li>
+        <li> Prof Rani Astya, SU, Greater Noida</li>
+        <li> Dr. Karan Singh, JNU, New Delhi</li>
+        <li> Dr Sushil Dohre, JNU, New Delhi</li>
+        <li> Dr. S. B. Goyal, City University, Malaysia</li>
+      </ul>
+      </div>
+      </div>
+      </div>
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+</section>
+	    <!-- committees ends -->
           
   </div>
 </div>
@@ -459,7 +760,7 @@
   <!--Contact us Final Section acc to   ICACDS21-->
 <section class="text-gray-700 body-font relative">
   <div class="absolute inset-0 bg-gray-300">
-<iframe width="1348" height="600" id="gmap_canvas" src="https://maps.google.com/maps?q=Galgotias%20College%20of%20Engineering%20and%20Technology%2CKnowledge%20Park%20III%20Greater%20Noida&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>#gmap_canvas {overflow:hidden;background:none!important;height:80vh;width:98.5vw;margin-top: 2%;margin-left: auto;margin-right: auto;}</style>
+<iframe width="1348" height="600"  id="gmap_canvas" src="https://maps.google.com/maps?q=Galgotias%20College%20Of%20Engineering%20and%20Technology&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>#gmap_canvas {overflow:hidden;background:none!important;height:80vh;width:98.5vw;margin-top: 2%;margin-left: auto;margin-right: auto;}</style>
   <div class="container px-5 py-24 mx-auto flex">
     <div class="lg:w-1/3 md:w-1/2 bg-red rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10" style="background-color: #EC3939;float:right;width:35vw;height:70vh;">
       <i src="images/placeholder.png" style="font-size:48px;\"></i>
