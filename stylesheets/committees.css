@@ -7,8 +7,9 @@
 /* Style the tab */
 .tab {
     overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: rgb(66,84, 103);;
+    background-color: rgb(66,84, 103);
+    border-radius: 20px 20px 5px 5px;
+    padding-left: 180px;
   }
   
   /* Style the buttons inside the tab */
@@ -18,15 +19,27 @@
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 16px 16px;
     transition: 0.3s;
     font-size: 17px;
+    height: 75px;
+    
+    
+    
   }
   .tablinks
   {
       color:white;
   }
   
+  .outer-tab
+  {
+    margin: 80px;
+    background-color: rgb(225, 11, 62);;
+      color:black;
+      border-radius: 20px;
+      border:2px solid rgb(66,84, 103);
+  }
   /* Change background color of buttons on hover */
   .tab button:hover {
     background-color: rgb(17, 16, 16);
@@ -57,8 +70,6 @@
       text-align: justify;
       
   }
-.h2-comm-card
-{color: #0d1d31; font-weight: 700; margin-top: 0; margin-bottom: 25px; font-size: 18px;}
 
   .outer-card
   {
