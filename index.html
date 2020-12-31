@@ -28,21 +28,88 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="query.js"></script>
-	
+	 <style type="text/css">
+
+.navbaar {
+  height: 80px;
+  background-color: transparent;
+  border: none;
+  color: black;
+  z-index: 100;
+  transition: background-color 1s ease 0s;
+}
+
+.navbaar-default .navbaar-brand {
+  margin-top: 10px;
+  color: black;
+}
+.navbaar-default .navbaar-brand:hover {
+  color: #C57ED3;
+  border: 1px solid #C57ED3;
+}
+.navbaar-default .navbaar-nav > li > a {
+  color: black;
+  margin: 10px 5px 5px 5px;
+}
+.navbaar-default .navbaar-nav > li > a:hover, .navbaar-default .navbaar-nav > li > a:active, .navbaar-default .navbaar-nav > li > a:focus {
+  color: white;
+  border: 1px solid #C57ED3;
+}
+.navbaar-default .navbaar-nav > li > a:visited {
+  color: white;
+  text-decoration: none;
+}
+.navbaar-default .navbaar-nav > .active > a, .navbaar-default .navbaar-nav > .active > a:hover, .navbaar-default .navbaar-nav > .active > a:focus {
+  background-color: transparent;
+  color: #C57ED3;
+}
+.navbaar-default .navbaar-toggle {
+  border-color: #C57ED3;
+}
+.navbaar-default .navbaar-toggle:hover, .navbaar-default .navbar-toggle:focus {
+  background-color: #490D40;
+}
+.navbaar-default .navbaar-toggle .icon-bar {
+  color: #C57ED3;
+  background-color: #C57ED3;
+}
+.navbaar-default .navbaar-collapse.collapse.in ul {
+  background-color: #490D40;
+  display: flex;
+}
+
+/* Solid class attached on scroll past first section */
+.navbaar.solid {
+  background-color: #490D40;
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px grey;
+}
+.navbaar.solid .navbaar-brand {
+  color: #C57ED3;
+  transition: color 1s ease 0s;
+}
+.navbaar.solid .navbaar-nav > li > a {
+  color: #C57ED3;
+  transition: color 1s ease 0s;
+}
+
+  </style>
 </head>
 <body>
 	<!--Top Nav Bar According to ICACDS21-->
-<!--nav class="navbar navbar-default navbar-fixed-top">
-        <div class="navbar-header1">
-          <button type="button" class="navbar-toggle1 collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="query.js"></script>
+<nav class="navbaar navbaar-default navbar-fixed-top">
+        <div class="navbaar-header">
+          <button type="button" class="navbaar-toggle collapsed" data-toggle="collapse" data-target="#navbaar" aria-expanded="false" aria-controls="navbaar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">ICRAAE 2020-21</a>
+          <a class="navbaar-brand" href="#">ICRAAE 2020-21</a>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
+        <div id="navbaar" class="collapse navbaar-collapse">
           <ul class="nav navbar-nav navbar-right">
                <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -50,10 +117,11 @@
                   <li><a href="#">Call for Papers</a></li>
                      <li><a href="#">Speakers</a></li>
                         <li><a href="#">Committees</a></li>
-                           <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Contact Us</a></li>
           </ul>
-        </div>/.nav-collapse
-    </nav--> 
+        </div><!--/.nav-collapse -->
+    </nav>
+
 	
 	
   <!--Header-->
