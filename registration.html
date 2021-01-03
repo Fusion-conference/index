@@ -7,8 +7,108 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
+ <style type="text/css">
+	.navbar {
+  height: 80px;
+  background-color: transparent;
+  border: none;
+  color: black;
+  z-index: 100;
+  transition: background-color 1s ease 0s;
+}
+
+.navbar-default .navbar-brand {
+  margin-top: 10px;
+  color: black;
+}
+.navbar-default .navbar-brand:hover {
+  color: #C57ED3;
+  border: 1px solid #C57ED3;
+}
+.navbar-default .navbar-nav > li > a {
+  color: black;
+  margin: 10px 5px 5px 5px;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
+  color: white;
+  border: 1px solid #C57ED3;
+}
+.navbar-default .navbar-nav > li > a:visited {
+  color: white;
+  text-decoration: none;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
+  color: #C57ED3;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #C57ED3;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #490D40;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  color: #C57ED3;
+  background-color: #C57ED3;
+}
+.navbar-default .navbar-collapsed.collapse.in ul {
+  background-color: #490D40;
+  display: flex;
+}
+
+/* Solid class attached on scroll past first section */
+.navbar.solid {
+  background-color: #490D40;
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px grey;
+}
+.navbar.solid .navbar-brand {
+  color: #C57ED3;
+  transition: color 1s ease 0s;
+}
+.navbar.solid .navbar-nav > li > a {
+  color: #C57ED3;
+  transition: color 1s ease 0s;
+}
+.navbar-nav li{
+    margin-top: 10px;
+}
+  </style>
 </head>
-<body style="font-family: 'Raleway';background-color:#f5f5f5;">
+<body>
+	<!--Top Nav Bar According to ICACDS21-->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="query.js"></script>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="containe4">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">ICRAAE 2020-2021</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse" >
+          <ul class="navbar-nav navbar-right" style="margin-right:3%;margin-top:1.2%">
+                 <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+               <li><a href="#">Preceedings</a></li>
+                  <li><a href="#">Call for Papers</a></li>
+		  <li><a href="registration.html">Registration</a></li>
+                     <li><a href="#">Speakers</a></li>
+                        <li><a href="#">Committees</a></li>
+          <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<section style="font-family: 'Raleway';background-color:#f5f5f5;">
     <div class="registration" style="margin-left: 50px; margin-right: 50px;margin-top: 100px;">
         <h2 style="font-weight: 900!important;font-size:24px;line-height: 1;text-transform: uppercase;color: #0d1d31;font-family: inherit;"><b>REGISTRATION</b></h2><br><br>
         <br>
@@ -82,5 +182,6 @@
             <li>Only one author (co-author) can attend the conference against a single registration.</li>
         </ol>
     </div>
+    </section>
 </body>
 </html>
