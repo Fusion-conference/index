@@ -56,16 +56,16 @@
     background-size: 100% 400px;
 }
 #maincontainer h1{
-    color:white;
-    position: fixed ;
+    color:black;
+    position: absolute ;
     width:auto ;
-    font-size:20px;
-    left: 20px;
+    font-size:30px;
+    left: 50px;
     text-transform: capitalize ;
     justify-content:center ;
     display: inline-block ;
     z-index:99;
-    top:20%;
+    top:25%;
 }
 #teamsection{
     color: black;
