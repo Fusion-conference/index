@@ -16,9 +16,10 @@
 
 }
 .centered-h {
-  position: absolute;
+  position: relative;
   font-family: 'Raleway';font-size: 22px;
   top: 50%;
+    left:25%;
   transform: translate(-50%, -50%);
     
 }
