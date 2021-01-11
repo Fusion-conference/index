@@ -17,11 +17,18 @@
 }
 .centered-h {
   
-  font-family: 'Raleway';font-size: 28px;
-  position: relative
+  height:15em;
+  font-family: 'Raleway', sans-serif;
+  font-size: 48px;
+  font-weight:800;
+  text-align:center;
+  margin:0 0 20px;
+  line-height: 62px;
+  position: relative;
 }
 
 div.centered-h h1 {
+    color:#ffffff;
     margin: 0;
     position: absolute;
     top: 50%;
