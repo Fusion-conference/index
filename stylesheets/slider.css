@@ -66,6 +66,11 @@ div.centered-h h1 {
     height:400px;
     filter: brightness(85%);    
     background-image: url("/images/gcet.jpg");
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    )
     background-size:100% 400px;
 }
 #slides3{
