@@ -31,7 +31,7 @@ div.centered-h h1 {
     color:#ffffff;
     margin: 0;
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%) }
@@ -55,28 +55,28 @@ div.centered-h h1 {
 #slides1{
     width:100%;
     height:400px;
-    filter: brightness(70%);
+    filter: brightness(50%);
     background-image: url("/images/gcet2.jpg");
     background-size: 115% 400px;
 }
 #slides2{
     width:100%;
     height:400px;
-    filter: brightness(70%);    
+    filter: brightness(50%);    
     background-image: url("/images/gcet.jpg");
     background-size:100% 400px;
 }
 #slides3{
     width:100%;
     height:400px;
-    filter: brightness(70%);
+    filter: brightness(50%);
     background-image: url("/images/gcet2.jpg");
     background-size: 115% 400px;
 }
 #slides4{
     width:100%;
     height:400px;
-    filter: brightness(70%);
+    filter: brightness(50%);
     background-image: url("/images/gcet1.jpg");
     background-size: 100% 400px;
 }
