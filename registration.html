@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/temp1Shashank.css">
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   <style>
-  .navbar {
+.navbar {
   height: 80px;
   background-color: transparent;
   border: none;
@@ -24,24 +24,25 @@
   color: black;
 }
 .navbar-default .navbar-brand:hover {
-  color: #C57ED3;
+  color: black;
   border: 1px solid #C57ED3;
 }
 .navbar-default .navbar-nav > li > a {
   color: black;
   margin: 10px 5px 5px 5px;
 }
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav > li > a:hover , .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
   color: black;
-
+	 text-decoration: none;
+	
 }
-.navbar-default .navbar-nav > li > a:visited {
+.navbar-default .navbar-nav > li > a{
   color: black;
   text-decoration: none;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  background-color: transparent;
-  color: #C57ED3;
+  background-color: #6F1F1F;
+  color: black;
 }
 
 .navbar-default .navbar-toggle {
@@ -61,7 +62,7 @@
 
 /* Solid class attached on scroll past first section */
 .navbar.solid {
-  background-color: #490D40;
+  background-color: #F9E4DF;
   transition: background-color 1s ease 0s;
   box-shadow: 0 0 4px grey;
 }
@@ -70,16 +71,17 @@
   transition: color 1s ease 0s;
 }
 .navbar.solid .navbar-nav > li > a {
-  color: #C57ED3;
+	color:black;
   transition: color 1s ease 0s;
 }
 .navbar-nav li{
     margin-top: 10px;
-    color: black;
 }
-.navbar-nav li a{
+	
+.navbar-nav li:hover{
+	background-color:#FFF4F1;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 th{
 text-align: center;
@@ -135,27 +137,30 @@ ol li::before {
 });
   </script>
 <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="containe4">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">ICRAAE 2020-21</a>
+          <a class="navbar-brand" href="index.html" style="color:black">ICRAAE 2020-2021</a>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="navbar-nav navbar-right" style="margin-right: 2%;margin-top: 1.1%;">
-               <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-               <li><a href="#">Preceedings</a></li>
-                  <li><a href="#">Call for Papers</a></li>
-                     <li><a href="#">Speakers</a></li>
-                        <li><a href="#">Committees</a></li>
-          <li><a href="#">Contact Us</a></li>
+        <div id="navbar" class="collapse navbar-collapse" >
+          <ul class="navbar-nav navbar-right" style="margin-right:3%;margin-top:1.2%;font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;">
+                 <li><a href="index.html#home" >Home</a></li>
+            <li><a href="index.html#about" >About</a></li>
+               <li><a  href="index.html#pre" >Preceedings</a></li>
+                  <li><a  href="index.html#call" >Call for Papers</a></li>
+                     <li><a  href="index.html#speak" >Speakers</a></li>
+                        <li><a  href="index.html#commit" >Committees</a></li>
+          <li><a  href="index.html#contact" >Contact Us</a></li>
           </ul>
         </div><!--/.nav-collapse -->
+      </div>
     </nav>
-
   
 
 
@@ -224,7 +229,7 @@ ol li::before {
           </table>
 
           <h5>*Note</h5><br>
-          <br>
+         
           <ol>
               <li>The accommodation will be arranged on paid basis in the nearby Hostels as per the availability and requirements. Group Pick up and Drop facility will be    available from/to such places to/from the venue. If delegates have specific requirements, the same can be arranged on paid basis.</li>
             <li>The registration fee includes Conference kit, lunches, tea/coffee. The registration fee is to be paid online. Conference Fee DOES NOT includes Transportation and Accommodation charges.</li>

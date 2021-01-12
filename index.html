@@ -24,144 +24,67 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/committees.css"> 
   <link rel="stylesheet" type="text/css" href="stylesheets/temp1Shashank.css">
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-
+  
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="query.js"></script>
 	
  <style type="text/css">
-	.navbar {
-  height: 80px;
-  background-color: transparent;
-  border: none;
-  color: black;
-  z-index: 100;
-  transition: background-color 1s ease 0s;
+	   nav li a{
+        text-decoration: none;
+        color:white;
+    }
+    nav li {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    margin-left: 2%;
 }
 
-.navbar-default .navbar-brand {
-  margin-top: 10px;
-  color: black;
+nav li{
+    text-align: center;
+    display: inline-block;
+    line-height: 10vh;
+    font-size: 100%;
+    color: #F63131;
+} 
+nav li:hover{
+    background-color:rgba(156, 252, 231,0.8) /*#0C9CD0*/;
+    color: #900C3F;
 }
-.navbar-default .navbar-brand:hover {
-  color: #C57ED3;
-  border: 1px solid #C57ED3;
+nav a:hover
+{
+    color:black;
 }
-.navbar-default .navbar-nav > li > a {
-  color: black;
-  margin: 10px 5px 5px 5px;
-}
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
-  color: white;
-}
-.navbar-default .navbar-nav > li > a:visited {
-  color: white;
-  text-decoration: none;
-}
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  background-color: transparent;
-  color: #C57ED3;
-}
-
-.navbar-default .navbar-toggle {
-  border-color: #C57ED3;
-}
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: #490D40;
-}
-.navbar-default .navbar-toggle .icon-bar {
-  color: #C57ED3;
-  background-color: #C57ED3;
-}
-.navbar-default .navbar-collapsed.collapse.in ul {
-  background-color: #490D40;
-  display: flex;
-}
-
-/* Solid class attached on scroll past first section */
-.navbar.solid {
-  background-color: #490D40;
-  transition: background-color 1s ease 0s;
-  box-shadow: 0 0 4px grey;
-}
-.navbar.solid .navbar-brand {
-  color: #C57ED3;
-  transition: color 1s ease 0s;
-}
-.navbar.solid .navbar-nav > li > a {
-  color: #C57ED3;
-  transition: color 1s ease 0s;
-}
-.navbar-nav li{
-    margin-top: 10px;
+	 a:hover{
+		 text-decoration:none;
+	 }
+nav{
+	background-color:#00042E ;
+	text-align: center;
+	margin-bottom: 0%;
 }
 	 #gmap_canvas {overflow:hidden;background:none!important;height:75vh;width:98.5vw;margin-left: auto;margin-right: auto;}
   </style>
 </head>
 <body>
 	<!--Top Nav Bar According to ICACDS21-->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="query.js"></script>
-<body>
-<nav class="navbar navbar-default navbar-fixed-top">
-      <div class="containe4">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">ICRAAE 2020-2021</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse" >
-          <ul class="navbar-nav navbar-right" style="margin-right:3%;margin-top:1.2%">
-                 <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-               <li><a href="#">Preceedings</a></li>
-                  <li><a href="#">Call for Papers</a></li>
-		  <li><a href="registration.html">Registration</a></li>
-                     <li><a href="#">Speakers</a></li>
-                        <li><a href="#">Committees</a></li>
-          <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+ 
+<nav class="navbar-fixed-top">
+		<li> <a href="#home">Home</a></li>
+		<li> <a href="#about">About</a></li>
+		<li> <a href="#pre">Preceedings</a></li>
+		<li> <a href="#call">Call for papers</a></li>
+		<li> <a href="registration.html">Registration</a></li>
+		<li> <a href="#speak">Speakers</a></li>
+		<li> <a href="#commit">Committees</a></li>
+		<li> <a href="#contact">Contact Us</a></li>
+	</nav>
+
 
 	
 	
-  <!--Header-->
   
-  <!-- <header class="text-gray-700 body-font topNav" style="background-image: linear-gradient(to bottom right, green, lightgreen);width: 100%;z-index: 100;">
-    <div class="container-nav mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-      </img>
-      <span class="ml-3 text-xl">ICRAEE</span>
-    </a>
-    <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center" >
-      <a href="main.html" style="color:white" class="mr-5 hover:text-white">ICRAEE</a>
-      <a href="" style="color:white" class="mr-5 hover:text-blue">FOR AUTHORS</a>
-      <div class="dropdown-content">
-        <a href="#">CALL FOR PAPERS</a>
-        <a href="#">REGISTRATION DETAILS</a>
-      </div>
-      <a href="" style="color:white" class="mr-5 hover:text-white dropdown">COMMITTEE</a>
-      <div class="dropdown-content">
-        <a href="#">ADVISORY BOARD</a>
-        <a href="#">ORGANISING COMMITTEE</a>
-        <a href="#">TECHNICAL PROGRAM COMMITTEE</a>
-      </div>
-      <a href="#" style="color:white" class="mr-5 hover:text-white">IMPORTANT DATES</a>
-      <a href="" style="color:white" class="mr-5 hover:text-white">SUBMISSION</a>
-      <a href="" style="color:white" class="mr-5 hover:text-white">SPEAKERS</a>
-      <a href="" style="color:white" class="mr-5 hover:text-white">CONTACT US</a>
-    </nav>
-    </div>
-</header> -->
-
   
 
 <!--nav class="navbar navbar-expand-lg navbar-light bg-light topNav" style="background-image: linear-gradient(to bottom right, green, lightgreen);width: 100%;z-index: 100;">
@@ -203,11 +126,19 @@
   </div>
 </nav-->
   
-<!-- sliding -->
-<div id="maincontainer">
-    <div id="slidescontainer">
-      <div id="slides1"></div>
-      <div id="slides2"></div>
+<!-- sliding carousel header -->
+<div id="maincontainer ">
+    <div id="slidescontainer" >
+      <div id="slides1">
+	      <div class="centered-h">
+	      <h1 id="home">INTERNATIONAL CONFERENCE ON RECENT ADVANCEMENTS <br> APPLICATION IN ENGINEERING</h1>
+	    </div>
+	    </div>
+      <div id="slides2">
+	      <div class="centered-h">
+	      <h1>IMPORTANT DATES <br> OCT 2021</h1>
+	      </div>
+	</div>
       <div id="slides3"></div>
       <div id="slides4"></div>
     </div>
@@ -221,21 +152,21 @@
   <!-- header ends here -->
 
       <!-- Side Navbar -->
-    <div class="sideNavbar">
-      <div class="news">
-        <div class="smallHeading">
+    <div class="sideNavbar" style="background-color:#7AE5A8 ">
+      <div class="news" style="background-color:#00015D ">
+        <div class="smallHeading" style="background-color:white">
           <h3><b>News & Announcements</b></h3>
         </div>
-        <div class="content">
+        <div class="content" style="color:white">
           <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span>
         </div>
       </div>
-      <div class="impDates">
-        <div class="smallHeading">
+      <div class="impDates" style="background-color:#00015D ">
+        <div class="smallHeading" style="background-color:white">
           <h3><b>Important Dates</b></h3>
         </div>
         <div class="content">
-          <div class="flex-grow">
+          <div class="flex-grow" style="color:white">
             <h4><b>Submission Deadline</b></h4>
             <p>June 15, 2021</p>
             <br>
@@ -258,7 +189,7 @@
   
 
       <!--About the event-->
-      <div style="margin-bottom: 50px; margin-top: 50px; background-color: #F2F4F4; margin-left: 350px;height: 100%;padding-bottom:20px ">
+      <div style="margin-bottom: 50px; margin-top: 50px; background-color: #F2F4F4; margin-left: 350px;height: 100%;padding-bottom:20px " id="about">
         <div class="z">
           <h1> &#x2B50;About the Conference</h1>
       </div>
@@ -298,13 +229,13 @@ We welcome, Original, previously unpublished and high quality research papers. A
 </div>
      
       <!-- PROCEEDINGS -->
-      <div class="parallax">
+      <div class="parallax" id="pre">
         <h1 style="text-align: center;padding-top: 50px;font-size: 50px;color:white">PROCEEDINGS</h1>
       </div>
 
 <div class="mainContent">
       <!--  CALL FOR PAPERS -->
-      <div class="callForPapers"style="height:900px;">
+      <div class="callForPapers"style="height:900px;" id="call">
         <h2 style="font-weight: 900!important;font-size:24px;line-height: 1;text-transform: uppercase;color: #0d1d31;font-family: inherit;"><b>CALL FOR PAPERS</b></h2><br><br>
         <span>
           ICRAAE-2021 conference will host Keynote Lectures, Tutorials, Workshops and Oral Presentations on all aspects of Advanced Computing. The Conference is being organized specifically to help the Computer Industry derive benefits from the advances of next generation computer and computing technologies.
@@ -321,8 +252,8 @@ We welcome, Original, previously unpublished and high quality research papers. A
 
         <div class="tracks">
           <div class="col-sm-6 col-md-6 leftTabs">
-            <ul id="tabs-faq" class="nav">
-               <li class="active" id="tab1"><a href="#tab-faq1" data-toggle="tab"><i class="fa fa-angle-right" id="i1"></i> <span class="faq-inner">Track</span></a></li>
+            <ul id="tabs-faq" class="nav" >
+               <li class="active" id="tab1" style="background-color:#71F668"><a href="#tab-faq1" data-toggle="tab"><i class="fa fa-angle-right" id="i1" style="color:black"></i> <span class="faq-inner" >Track</span></a></li>
                <!-- <li id="tab2" hidden><a href="#tab-faq2" data-toggle="tab"><i class="fa fa-plus" id="i2"></i> <span class="faq-inner">Track 2</span></a></li> -->
             </ul>
          </div>
@@ -402,7 +333,7 @@ We welcome, Original, previously unpublished and high quality research papers. A
     
     
     <!--Conference Overview and following section-->
-  <section class="text-gray-700 body-font" style="background-image:url('images/coback.png'); height: 660px;" >
+  <section class="text-gray-700 body-font" style="background-image:url('images/coback.png'); height: 660px;" id="commit">
   <div class="container px-5 py-1 mx-auto" >
     <div class="flex flex-col text-center w-full mb-20">
       <h1 id="speakers" class="text-4xl text-red-500 tracking-widest font-medium title-font mb-1" style="text-align: center;">PAPER  SUBMISSION</h1><br>
@@ -414,7 +345,7 @@ We welcome, Original, previously unpublished and high quality research papers. A
         <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
           <div class="flex items-center mb-3"style="text-align: center;background-color: #ea032d;color: white;align-items: center;margin:0 auto">
           
-            <h2 class="text-gray-900 text-lg title-font font-medium" style="font-size: 24px;background-color: #ea032d;line-height: 60px;margin:5px;height: 60px;width: 300px;color:white;">AUTHOR GUIDELINES</h2>
+            <h2 class="text-gray-900 text-lg title-font font-medium" style="font-size: 24px;background-color:#BEFFEE ;line-height: 60px;border:#121962;margin:5px;height: 60px;width: 300px;color:black;">AUTHOR GUIDELINES</h2>
           </div>
           <div class="flex-grow">
             <p class="leading-relaxed text-base" style="font-size: 2rem!important;">Prospective authors are invited to<br>
@@ -441,9 +372,9 @@ We welcome, Original, previously unpublished and high quality research papers. A
         </div>
       </div>
       <div class="p-4 md:w-1/3">
-        <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+        <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col" >
            <div class="flex items-center mb-3"style="text-align: center;background-color: #ea032d;color: white;align-items: center;margin:0 auto">
-            <h2 class="text-gray-900 text-lg title-font font-medium" style="font-size: 24px;background-color: #ea032d;line-height: 60px;margin:5px;height: 60px;width: 300px;color:white;">IMPORTANT DATES</h2>
+            <h2 class="text-gray-900 text-lg title-font font-medium" style="font-size: 24px;background-color:#BEFFEE ;line-height: 60px;margin:5px;height: 60px;width: 300px;color:black;">IMPORTANT DATES</h2>
           </div>
           <div class="flex-grow">
             <p class="leading-relaxed text-base" style="font-size: 2rem!important;"><B>Submission Deadline</B><br>June 15,2021<br><br><b>Acceptance Notification</b><br>September 15,2021<br><br><b>Submission of Camera Ready Paper</b><br>September 30,2021<br><br><b>Author's Registration Deadline</b><br>September 30,2021</p>
@@ -458,7 +389,7 @@ We welcome, Original, previously unpublished and high quality research papers. A
       <div class="p-4 md:w-1/3">
         <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
           <div class="flex items-center mb-3" style="text-align: center;background-color: #ea032d;color: white;align-items: center;margin:0 auto">
-            <h2 class="text-gray-900 text-lg title-font font-medium" style="font-size: 24px;background-color: #ea032d;line-height: 60px;margin:5px;height: 60px;width: 300px;color: white;">REGISTRATION</h2>
+            <h2 class="text-gray-900 text-lg title-font font-medium" style="font-size: 24px;background-color:#BEFFEE ;line-height: 60px;margin:5px;height: 60px;width: 300px;color: black;">REGISTRATION</h2>
             
           </div>
           <div class="flex-grow">
@@ -491,7 +422,7 @@ We welcome, Original, previously unpublished and high quality research papers. A
           <!--SPEAKERS-->
     
     
-    <h1 style="margin-top: 50px;font-size: 25px;font-family: 'Raleway';margin-left: 50px;color: #000;" ><b>KEYNOTE SPEAKERS</b></h1>
+    <h1 style="margin-top: 50px;font-size: 25px;font-family: 'Raleway';margin-left: 50px;color: #000;" id="speak"><b>KEYNOTE SPEAKERS</b></h1>
     <div class="flex-container" >
       
       <div class="flip-box">
@@ -598,17 +529,17 @@ We welcome, Original, previously unpublished and high quality research papers. A
 </div>
 		
 		<!-- committee begins -->
-    <section class="committees">
-      <h1 style="text-align: center; color: white;margin-top: 50px;font-size: 25px;" >COMMITTEES</h1>
+    <section class="committees" style="background:transparent;background-color:#308B5A;margin-1op:0%;">
+      <h1 style="text-align: center; color: white;margin-top: 1%;font-size: 25px;" >COMMITTEES</h1>
         <br>
       
-      <div class="outer-tab">
+      <div class="outer-tab" style="margin-top:3%;">
       <div class="tab">
         <button class="tablinks" onclick="openCity(event, 'oc')" id="defaultOpen">ORGANIZING COMMITTEE</button>
         <button class="tablinks" onclick="openCity(event, 'tpc')">TECHNICAL PROGRAM COMMITTEE</button>
         <button class="tablinks" onclick="openCity(event, 'ab')">ADVISORY BOARD</button>
       </div>
-      <div id="oc" class="tabcontent">
+      <div id="oc" class="tabcontent" style="background-color:#BEFFEE">
         
         <br>
         <div class="comm-card">
@@ -750,7 +681,7 @@ We welcome, Original, previously unpublished and high quality research papers. A
               </ul>
             </div>
         </div>
-      <div id="tpc" class="tabcontent">
+      <div id="tpc" class="tabcontent" style="background-color:#BEFFEE">
         <br>
         <div class="comm-card">
           <h2 style="color: rgb(225, 11, 62);"> TECHNICAL PROGRAM COMMITTEE</h2>
@@ -797,7 +728,7 @@ We welcome, Original, previously unpublished and high quality research papers. A
             </div>
             </div>
       
-      <div id="ab" class="tabcontent">
+      <div id="ab" class="tabcontent" style="background-color:#BEFFEE">
         <br>
         <div class="comm-card">
           <h2 style="color: rgb(225, 11, 62);">ADVISORY BOARD</h2>
@@ -834,7 +765,7 @@ We welcome, Original, previously unpublished and high quality research papers. A
       
   
   <!--Contact us Final Section acc to   ICACDS21-->
-<section class="text-gray-700 body-font relative" style="margin-top:0px;">
+<section class="text-gray-700 body-font relative" style="margin-top:0px;" id="contact">
   <div class="absolute inset-0 bg-gray-300">
 <iframe width="1348" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Galgotias%20College%20of%20Engineering%20and%20Technology%2CKnowledge%20Park%20III%20Greater%20Noida&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div
   <div class="container px-5 py-24 mx-auto flex">
