@@ -35,7 +35,7 @@
   .outer-tab
   {
     margin: 80px;
-    background-color: rgb(225, 11, 62);;
+    background-color: #beffee;
       color:black;
       border-radius: 20px;
       border:2px solid rgb(66,84, 103);
@@ -73,7 +73,7 @@
 
   .outer-card
   {
-      background-color: rgb(225, 11, 62);
+      background-color: #beffee;
       border-radius: 25px;
       padding:45px;
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
