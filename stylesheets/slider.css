@@ -59,9 +59,9 @@ div.centered-h h1 {
     height:400px;
     filter: brightness(100%);
     background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),url("/images/gcet2.jpg");
+      rgba(0, 0, 0, 0.0),
+      rgba(0, 0, 0, 0.0)
+    ),url("/images/gcet-edit.jpg");
     background-size: 115% 400px;
 }
 #slides2{
